@@ -23,7 +23,7 @@
 			<psc></psc>
 			<mesto></mesto>
 		</a>
-		<ip id_pac="%PACIENT_ID%" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_ip">
+		<ip id_pac="{{ record.personal_number }}" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_ip">
 			<rodcis>{{ record.personal_number }}</rodcis>
 			<jmeno>{{ record.first_name }}</jmeno>
 			<prijmeni>{{ record.last_name }}</prijmeni>
