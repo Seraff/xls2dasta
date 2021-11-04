@@ -11,7 +11,7 @@ usage: convert.py [-h] -i INPUT -o OUTPUT
 ## Example
 
 ```
-test
+test/
 ├── input.xlsx
 └── results/
 ```
@@ -25,7 +25,7 @@ The xml files will be saved to `-o` folder.
 The names of the files are taken from the corresponding "Číslo žádanky" field.
 
 ```
-test
+test/
 ├── input.xlsx
 └── results/
     ├── 1288750004.xml
