@@ -16,6 +16,9 @@ test
 ./convert.py -i test/input.xlsx -o test/results/
 ```
 
+The xml files will be saved to `-o` folder. 
+
+The names of the files are taken from the corresponding "Číslo žádanky" field.
 
 ```
 test
