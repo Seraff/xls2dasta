@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dasta xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:cz-mzcr:ns:dasta:ds4:ds_dasta http://ciselniky.dasta.mzcr.cz/xmlschema/ds_dasta-4.03.23.xsd urn:cz-mzcr:ns:dasta:ds4:ds_ip http://ciselniky.dasta.mzcr.cz/xmlschema/ds_ip-4.10.06.xsd" id_soubor="STAPRO__OpenLIMS_04002311_0KCUX" verze_ds="04.21.04" verze_nclp="02.72.04" bin_priloha="T" ur="R" typ_odesm="LB" ozn_soub="0KCUX" potvrzeni="N" dat_vb="2021-03-22T11:15:21" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
+	<zdroj_is kod_firmy="STAPRO__" kod_prog="OpenLIMS" verze_prog="5.35.56."/>
+	<pm>
+		<as typ="I">
+			<vnitrni>ISIN</vnitrni>
+		</as>
+		<a typ="P">
+			<jmeno>ÚZIS</jmeno>
+			<adr>Palackého námìstí 2</adr>
+			<mesto>Praha 2</mesto>
+		</a>
+	</pm>
+
+	<is icz="" icp="" icl="" ico="">
+		<as typ="I">
+		</as>
+		<a typ="P">
+			<jmeno></jmeno>
+			<adr></adr>
+			<dop1></dop1>
+			<dop2></dop2>
+			<psc></psc>
+			<mesto></mesto>
+		</a>
+		<ip id_pac="123456/7890" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_ip">
+			<rodcis>123456/7890</rodcis>
+			<jmeno>Marek</jmeno>
+			<prijmeni>Bartoš</prijmeni>
+			<dat_dn format="D">1986-08-20</dat_dn>
+			<stat_pris></stat_pris>
+			<sex>M</sex>
+			<ds:a typ="1" xmlns:ds="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
+				<ds:jmeno></ds:jmeno>
+				<ds:adr></ds:adr>
+				<ds:psc></ds:psc>
+				<ds:mesto></ds:mesto>
+			</ds:a>
+
+			<pv_pac typ_pv="">
+			</pv_pac>
+			
+			<p ind_oprav_sd="N">
+				<cispoj></cispoj>
+				<kodpoj></kodpoj>
+			</p>
+
+			<dg>
+				<dgz typ_dg="P">
+					<diag poradi="1">U071</diag>
+				</dgz>
+			</dg>
+
+			<ku>
+				<ku_z typku="LAB.VYS" fazespec="ZP" idku="50781" idkulok="6849646004">
+					<dat_prov>2021-06-18</dat_prov>
+					<dat_vydani>2021-07-02</dat_vydani>
+					<z_pracoviste icz="" icp="" odb="" ns="">
+						<nazev></nazev>
+					</z_pracoviste>
+					<p_pracoviste ico="60077344" odb="801" ns="0">
+						<nazev></nazev>
+						<a typ="P" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
+							<jmeno></jmeno>
+							<adr></adr>
+							<dop1></dop1>
+							<dop2></dop2>
+							<psc></psc>
+							<mesto></mesto>
+						</a>
+					</p_pracoviste>
+					<text>
+						<ptext xml:space="preserve">
+						</ptext>
+					</text>
+					<ku_z_lab klic_nclp="50803" syst_klic="RNA" komp_klic="SCV2RNVP" typ_cispol="N" typpol_fh="X" stav_vys="A" urg_zprac="R" typ_sdel_vys="N" akreditace="N">
+						<dat_du typ="I">2021-06-18</dat_du>
+						<nazev_lclp> RNA viru SARS-CoV-2 - varianta „pango“ (RNA, SEQVAR [-] SEQ)</nazev_lclp>
+						<vrx>
+							<hodnota_nt>B.1.1.7</hodnota_nt>
+							<pozn></pozn>
+						</vrx>
+					</ku_z_lab>
+					<ku_z_lab klic_nclp="50805" syst_klic="RNA" komp_klic="SCV2RNVS" typ_cispol="N" typpol_fh="FR" stav_vys="A" urg_zprac="R" typ_sdel_vys="N" akreditace="N">
+						<dat_du typ="I">2021-06-18</dat_du>
+						<nazev_lclp> RNA viru SARS-CoV-2 - varianta (RNA; vlastnost/popis [-] SEQ) </nazev_lclp>
+						<vrf>
+							<hodnota_kod>VOC2022</hodnota_kod>
+						</vrf>
+					</ku_z_lab>
+				</ku_z>
+			</ku>
+		</ip>
+	</is>
+</dasta>
