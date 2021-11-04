@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dasta xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:cz-mzcr:ns:dasta:ds4:ds_dasta http://ciselniky.dasta.mzcr.cz/xmlschema/ds_dasta-4.03.23.xsd urn:cz-mzcr:ns:dasta:ds4:ds_ip http://ciselniky.dasta.mzcr.cz/xmlschema/ds_ip-4.10.06.xsd" id_soubor="STAPRO__OpenLIMS_04002311_0KCUX" verze_ds="04.21.04" verze_nclp="02.72.04" bin_priloha="T" ur="R" typ_odesm="LB" ozn_soub="0KCUX" potvrzeni="N" dat_vb="2021-03-22T11:15:21" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
+	<!--id_soubor = jednoznačný Identifikator souboru
+dat_vb= datum dávky-->
+	<zdroj_is kod_firmy="STAPRO__" kod_prog="OpenLIMS" verze_prog="5.35.56."/>
+	<pm>
+		<!--pm = Příjemce = konstanta-->
+		<as typ="I">
+			<!--Identifikátor pro směrování do ISIN-->
+			<vnitrni>ISIN</vnitrni>
+		</as>
+		<a typ="P">
+			<jmeno>ÚZIS</jmeno>
+			<adr>Palackého náměstí 2</adr>
+			<mesto>Praha 2</mesto>
+		</a>
+	</pm>
+	<is icz="04002000" icp="04002311" icl="04002338" ico="11111111">
+		<!--Alespon Ico, u zdravotnických zarízení icp -->
+		<!--Odesílatel = laborator-->
+		<as typ="I">
+		</as>
+		<a typ="P">
+			<jmeno>Stříž Ilja MUDr.</jmeno>
+			<adr>Pracoviště laboratorních metod</adr>
+			<dop1>IKEM</dop1>
+			<dop2>Vídeňská 1958/9</dop2>
+			<psc>14021</psc>
+			<mesto>Praha 4</mesto>
+		</a>
+		<ip id_pac="7209183333" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_ip">
+			<!--Pacient rodné číslo / číslo pojištěnce-->
+			<rodcis>7209184444</rodcis>
+			<!--Rodné číslo-->
+			<jmeno>Jan</jmeno>
+			<prijmeni>Novák</prijmeni>
+			<dat_dn format="D">1972-09-18</dat_dn>
+			<!--Datum narození-->
+			<stat_pris>CZ</stat_pris>
+			<!--Státní příslušnost-->
+			<sex>M</sex>
+			<ds:a typ="1" xmlns:ds="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
+				<ds:jmeno>Jméno kontaktu</ds:jmeno>
+				<!--Adresa pobytu, pokud je dostupná-->
+				<ds:adr>Dlouhá 47</ds:adr>
+				<ds:psc>60500</ds:psc>
+				<ds:mesto>Brno</ds:mesto>
+			</ds:a>
+			<pv_pac typ_pv="ZP">
+				<!--Plátce ZP-pojišťovna, SM - samoplátce -->
+			</pv_pac>
+			<p ind_oprav_sd="N">
+				<!--V případě plátce ZP, jinak blok vynechat	-->
+				<cispoj>7209183333</cispoj>
+				<!--Číslo pojištěnce-->
+				<kodpoj>111</kodpoj>
+				<!--Kód pojišťovny-->
+			</p>
+			<dg>
+				<dgz typ_dg="P">
+					<diag poradi="1">U071</diag>
+					<!--  U071 - potvrzené COVID, U6975 = podezrení -->
+				</dgz>
+			</dg>
+			<ku>
+				<ku_z typku="LAB.VYS" fazespec="ZP" idku="STAPRO___IKEM_ULM_B.3054687" idkulok="1927277973">
+					<!--idku = jednozačný identifikátor vyšetření - přiděluje laboratoř
+						idkulok = ID žádanky - přichází se žádankou
+						-->
+					<dat_prov>2021-03-23T16:00:00</dat_prov>
+					<!--Datum provedení-->
+					<dat_vydani>2021-03-23T16:00:00</dat_vydani>
+					<!--Datum vydání-->
+					<z_pracoviste icz="04002000" icp="04002085" odb="1T7" ns="OIP">
+						<!--Žádající pracoviště, alespoň icp a nazev-->
+						<nazev>Praktický lékař  Novotný Jiří </nazev>
+					</z_pracoviste>
+					<p_pracoviste ico="99999999" odb="801" ns="0">
+						<!--Provádějící pracoviště - vlastní laboratoř, alespoň ico, u PZS icp-->
+						<nazev>Pracoviště laboratorních metod</nazev>
+						<!--Adresa povinná jen v případě, že se liší od odesílatele-->
+						<a typ="P" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
+							<jmeno>Stříž Ilja MUDr.</jmeno>
+							<adr>Pracoviště laboratorních metod</adr>
+							<dop1>IKEM</dop1>
+							<dop2>Vídeňská 1958/9</dop2>
+							<psc>14021</psc>
+							<mesto>Praha 4</mesto>
+						</a>
+					</p_pracoviste>
+					<text>
+						<ptext xml:space="preserve">
+						Povinný element  - text volný
+						</ptext>
+					</text>
+					<ku_z_lab klic_nclp="50805" syst_klic="RNA" komp_klic="SCV2RNVP" typ_cispol="N" typpol_fh="X" stav_vys="A" urg_zprac="R" typ_sdel_vys="N" akreditace="N">
+						<dat_du typ="I">2021-03-23T15:00:00</dat_du>
+						<!--Datum odběru-->
+						<nazev_lclp> RNA viru SARS-CoV-2 - varianta „pango“ (RNA, SEQVAR [-] SEQ)</nazev_lclp>
+						<!--Název lab položky-->
+						<vrx>
+							<hodnota_nt>B.1.1.7</hodnota_nt>
+							<!-- Hodnota pangolin linie -->
+							<pozn>ABCDEF123</pozn>
+							<!--Volitelny text odkaz do mezinarodni databaze-->
+						</vrx>
+					</ku_z_lab>
+					<ku_z_lab klic_nclp="50805" syst_klic="RNA" komp_klic="SCV2RNVS" typ_cispol="N" typpol_fh="FR" stav_vys="A" urg_zprac="R" typ_sdel_vys="N" akreditace="N">
+						<dat_du typ="I">2021-03-23T15:00:00</dat_du>
+						<!--Datum odběru-->
+						<nazev_lclp> RNA viru SARS-CoV-2 - varianta (RNA; vlastnost/popis [-] SEQ) </nazev_lclp>
+						<vrf>
+							<hodnota_kod>VOC2020</hodnota_kod>
+							<!--Výběr z číselníku -->
+						</vrf>
+					</ku_z_lab>
+				</ku_z>
+			</ku>
+		</ip>
+	</is>
+</dasta>
