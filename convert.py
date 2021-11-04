@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # @Date    : 2021-10-27
 # @Author  : Serafim Nenarokov (serafim.nenarokov@gmail.com)
 
