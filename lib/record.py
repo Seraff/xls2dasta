@@ -1,6 +1,9 @@
 from datetime import datetime
 
 class Record():
+  SEXES = [{'excel': ['M', 'Muž'], 'dasta': 'Muž'},
+           {'excel': ['Ž', 'F', 'Žena'], 'dasta': 'Žena'}]
+
   @staticmethod
   def parse_date(date):
     if type(date) != datetime:
@@ -37,7 +40,12 @@ class Record():
     self.first_name = xls_dict['Jméno']
     self.last_name = xls_dict['Příjmení']
     self.birth_date = Record.parse_date(xls_dict['Datum narození'])
-    self.sex = xls_dict['Pohlaví'].upper()
+    self.sex = xls_dict['Pohlaví']
+
+    # convert sex to dasta format value
+    for sex in Record.SEXES:
+      if self.sex in sex['excel']:
+        self.sex = sex['dasta']
 
     self.invoice_number = xls_dict['Číslo žádanky']
 
@@ -48,7 +56,7 @@ class Record():
     self.pango = xls_dict['Pango linie']
     self.variant = xls_dict['Varianta dle číselníku']
 
-    # removing space symbols around 
+    # removing space symbols around all the values
     for fld in self.fields:
       val = getattr(self, fld)
 
@@ -67,7 +75,7 @@ class Record():
       if Record.is_value_empty(val):
         self.errors.append(f'the field {fld} is empty')
 
-    if self.sex not in ('M', 'Ž'):
+    if self.sex not in ('Muž', 'Žena'):
       self.errors.append(f'the field "sex" can only have values M or Ž')
 
 

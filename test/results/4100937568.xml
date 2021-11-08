@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1250"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <dasta xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:cz-mzcr:ns:dasta:ds4:ds_dasta http://ciselniky.dasta.mzcr.cz/xmlschema/ds_dasta-4.03.23.xsd urn:cz-mzcr:ns:dasta:ds4:ds_ip http://ciselniky.dasta.mzcr.cz/xmlschema/ds_ip-4.10.06.xsd" id_soubor="STAPRO__OpenLIMS_04002311_0KCUX" verze_ds="04.21.04" verze_nclp="02.72.04" bin_priloha="T" ur="R" typ_odesm="LB" ozn_soub="0KCUX" potvrzeni="N" dat_vb="2021-03-22T11:15:21" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
 	<zdroj_is kod_firmy="STAPRO__" kod_prog="OpenLIMS" verze_prog="5.35.56."/>
 	<pm>
@@ -29,7 +29,7 @@
 			<prijmeni>Brož</prijmeni>
 			<dat_dn format="D">1988-03-15</dat_dn>
 			<stat_pris></stat_pris>
-			<sex>M</sex>
+			<sex>Muž</sex>
 			<ds:a typ="1" xmlns:ds="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
 				<ds:jmeno></ds:jmeno>
 				<ds:adr></ds:adr>
@@ -58,7 +58,7 @@
 					<z_pracoviste icz="" icp="" odb="" ns="">
 						<nazev></nazev>
 					</z_pracoviste>
-					<p_pracoviste ico="60077344" odb="801" ns="0">
+					<p_pracoviste ico="60077344" icp="60077344" odb="801" ns="0">
 						<nazev></nazev>
 						<a typ="P" xmlns="urn:cz-mzcr:ns:dasta:ds4:ds_dasta">
 							<jmeno></jmeno>
