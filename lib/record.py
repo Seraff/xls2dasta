@@ -55,6 +55,7 @@ class Record():
 
     self.pango = xls_dict['Pango linie']
     self.variant = xls_dict['Varianta dle číselníku']
+    self.note = xls_dict['Accession number (GISAID)']
 
     # removing space symbols around all the values
     for fld in self.fields:

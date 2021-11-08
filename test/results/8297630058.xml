@@ -78,7 +78,7 @@
 						<nazev_lclp> RNA viru SARS-CoV-2 - varianta „pango“ (RNA, SEQVAR [-] SEQ)</nazev_lclp>
 						<vrx>
 							<hodnota_nt>B.1.1.7</hodnota_nt>
-							<pozn></pozn>
+							<pozn>EPI_ISL_2989595</pozn>
 						</vrx>
 					</ku_z_lab>
 					<ku_z_lab klic_nclp="50805" syst_klic="RNA" komp_klic="SCV2RNVS" typ_cispol="N" typpol_fh="FR" stav_vys="A" urg_zprac="R" typ_sdel_vys="N" akreditace="N">
