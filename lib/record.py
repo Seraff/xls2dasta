@@ -1,8 +1,8 @@
 from datetime import datetime
 
 class Record():
-  SEXES = [{'excel': ['M', 'Muž'], 'dasta': 'Muž'},
-           {'excel': ['Ž', 'F', 'Žena'], 'dasta': 'Žena'}]
+  SEXES = [{'excel': ['M', 'Muž'], 'dasta': 'M'},
+           {'excel': ['Ž', 'F', 'Žena'], 'dasta': 'F'}]
 
   @staticmethod
   def parse_date(date):
