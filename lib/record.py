@@ -76,8 +76,8 @@ class Record():
       if Record.is_value_empty(val):
         self.errors.append(f'the field {fld} is empty')
 
-    if self.sex not in ('Muž', 'Žena'):
-      self.errors.append(f'the field "sex" can only have values M or Ž')
+    if self.sex not in ('M', 'F'):
+      self.errors.append(f'the field "sex" can only have values M or F')
 
 
   def is_valid(self):
